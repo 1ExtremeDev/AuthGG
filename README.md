@@ -5,7 +5,7 @@ AuthGG is a Python library for dealing with Auth.gg apis
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install requests
-<h3>Add the auth.py file in your application folder</h3>
+Add the auth.py file in your application folder
 
 ## Usage
 
