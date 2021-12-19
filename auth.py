@@ -38,10 +38,8 @@ class AuthGG:
             for each in needs[_type]:
                 if each not in payload: return "Missing Args"
             session = requests.Session()
-            session["headers"] = constants["routes"]["headers"]
-            session["api"] = constants["routes"]["api"]
-            session["data"] = payload
-            requestText: str = session.post().text
+            session.headers= constants["routes"]["headers"]
+            requestText: str = session.post(constants["routes"]["api"], data=payload).text
             for each in responses[_type]:
-                if each in requestText: return responses[each]
+                if each in requestText: return responses[_type][each]
             return "Server error."
