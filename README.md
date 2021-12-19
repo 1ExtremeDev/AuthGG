@@ -26,7 +26,7 @@ response: str = AuthGG.Action(
     username="Username", password="Password",
     hwid="hwid"
 )
-print(response, end='', flushed=True)
+print(response, end='', flush=True)
 ```
 
 ## Contributing
